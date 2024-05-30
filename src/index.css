@@ -1,3 +1,8 @@
+:root {
+  --light_blue: #6278f7;
+  --green_hospital: #95ffd4;
+}
+
 body {
   margin: 0;
   font-family: "Prata", serif;
