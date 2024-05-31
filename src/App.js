@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
-import { Formulario } from './components/Header/Formulario';
-import { MiOrg } from './components/Header/MiOrg';
+import { Formulario } from './components/Formulario';
+import { MiOrg } from './components/MiOrg';
+import { Equipo } from './components/Equipo';
 import './App.css';
 
 function App() {
 
-  const [mostrarFormulario, setMostrarFormulario] = useState(true);
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
 
   const cambiarMostrar = () => {
     setMostrarFormulario(!mostrarFormulario)
@@ -18,8 +19,8 @@ function App() {
       {mostrarFormulario &&
       <Formulario /> 
       }
-      
       <MiOrg cambiarMostrar={cambiarMostrar} />
+      <Equipo />
     </div>
   );
 }

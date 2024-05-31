@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { CampoTexto } from '../CampoTexto';
-import { ListaOpciones } from '../ListaOpciones';
-import { Boton } from '../Boton';
+import { CampoTexto } from './CampoTexto';
+import { ListaOpciones } from './ListaOpciones';
+import { Boton } from './Boton';
 import './Formulario.css';
 
 const Formulario = () => {
