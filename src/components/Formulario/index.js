@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import { CampoTexto } from './CampoTexto';
-import { ListaOpciones } from './ListaOpciones';
-import { Boton } from './Boton';
+import { CampoTexto } from '../CampoTexto';
+import { ListaOpciones } from '../ListaOpciones';
+import { Boton } from '../Boton';
 import './Formulario.css';
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nombre, setNombre] = useState("");
     const [puesto, setPuesto] = useState("");
     const [foto, setFoto] = useState("");
     const [equipo, setEquipo] = useState("");
+
+    const { registrarColaborador } = props;
 
     const manejarEnvio = (event) => {
         event.preventDefault();
@@ -19,7 +21,7 @@ const Formulario = () => {
             foto,
             equipo
         };
-        console.log(datosAEnviar);
+        registrarColaborador(datosAEnviar);
     }
 
     return (
@@ -46,7 +48,8 @@ const Formulario = () => {
                     actualizarValor={setFoto} />
                 <ListaOpciones
                     valor={equipo}
-                    actualizarEquipo={setEquipo} />
+                    actualizarEquipo={setEquipo}
+                    equipos={props.equipos} />
                 <Boton texto="Crear" />
             </form>
         </section>
