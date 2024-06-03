@@ -3,11 +3,12 @@ import { Header } from './components/Header';
 import { Formulario } from './components/Formulario';
 import { MiOrg } from './components/MiOrg';
 import { Equipo } from './components/Equipo';
+import { Footer } from './components/Footer';
 import './App.css';
 
 function App() {
 
-  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+  const [mostrarFormulario, setMostrarFormulario] = useState(true);
   const [colaboradores, setColaboradores] = useState([]);
 
   const cambiarMostrar = () => {
@@ -70,8 +71,9 @@ function App() {
       }
       <MiOrg cambiarMostrar={cambiarMostrar} />
       {equipos.map((equipo, index) => {
-        return <Equipo datos={equipo} key={index} />
+        return <Equipo datos={equipo} key={index} colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)} />
       })}
+      <Footer />
     </div>
   );
 }
