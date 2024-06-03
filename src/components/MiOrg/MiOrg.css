@@ -19,3 +19,13 @@
     right: 25%;
     cursor: pointer;
 }
+
+@media (width < 1080px) {
+    .org_section {
+        flex-direction: column;
+    }
+    .org_section img {
+        position: relative;
+        right: 0;
+    }
+}
