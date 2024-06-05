@@ -5,7 +5,7 @@ import hexToRgba from 'hex-to-rgba';
 const Equipo = (props) => {
 
     const { colorPrimario, colorSecundario, titulo, id } = props.datos;
-    const { colaboradores, eliminarColaborador, actualizarColor } = props;
+    const { colaboradores, eliminarColaborador, actualizarColor, like } = props;
 
     return (
         <>
@@ -29,6 +29,7 @@ const Equipo = (props) => {
                                     key={index}
                                     colorPrimario={colorPrimario}
                                     eliminarColaborador={eliminarColaborador}
+                                    like={like}
                                 />
                             })
                         }
