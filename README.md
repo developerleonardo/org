@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+# Org
+
+Welcome to Org! This is website made with React in which you can add teams and new collaborators to your teams, you just have to fill one of the forms depending on what you want to add and you will see below the added team or collaborator. Besides you can customize the color of your teams, delete a collaborator and select your favorite collaborator.
+
+![](https://imgur.com/Wa723Ln.png)
+
+
+![](https://gcdnb.pbrd.co/images/ZzX58UOq36Nz.png?o=1)
+
+## RESPONSIVE DESIGN
+
+In this project was used TailwindCSS and of course it is responsive to any screen
+<p align="center"><img src="https://imgur.com/25VXUjc.png" alt="project-image"></p>
+
+
+## INSTRUCTIONS
+
+Open the forms by clicking on the icon next to Mi organización. On your left you will find the form for adding a new collaborator, on your right you will find the form for adding a new team. Once you fill any form click on the button below and either your team or new collaborator will appear on the next section. keep in mind that a team with no collaborators will be hidden.
+
+
+## DEMO
+
+I invite you to try all the features of this project by clicking in the following link
+[Shopi](https://org-six-chi.vercel.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +93,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# AUTHOR
+
+Made with 💚  by [Leonardo Salazar](https://www.linkedin.com/in/leonardo-salazar-serna/)
